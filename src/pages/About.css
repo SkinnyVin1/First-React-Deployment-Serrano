@@ -1,0 +1,110 @@
+.about{
+    background-color: #E2E3E9;
+    width: 100%;
+    height: 90vh;
+    padding: 0 100px 0 100px;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    justify-items: center;;
+}
+
+.leftcon{
+    width: 90%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    
+}
+.leftcon h1{
+    font-size: 6rem;
+    font-weight: 200;
+    text-transform: lowercase;
+    width: 80%;
+    /* padding: 10px 0 10px 0; */
+    text-align: center;
+    animation: title 1s ease 0s 1 normal forwards;
+}
+@keyframes title {
+	0% {
+		opacity: 0;
+		transform: translateY(-30px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.leftcon span{
+    font-size: 1.1rem;
+    font-weight: 300;
+    width: 80%;
+    padding: 10px 0 10px 0;
+    text-align: start;
+    animation: desc 1s ease 1 normal forwards;
+}
+@keyframes desc {
+	0% {
+		opacity: 0;
+		transform: translateX(-30px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.rightcon{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rightcon img{
+    height: 90%;
+    animation: meImg 1s ease 0s 1 normal forwards;
+}
+
+.leftcon button{
+    width: 250px;
+    height: 60px;
+
+    background-color: #E2E3E9;
+    border: none;
+
+    font-size: 1.2rem;
+    /* animation: desc 1s ease 1 normal forwards; */
+    transition: .3s;
+}
+.leftcon button a{
+    text-decoration: none;
+    color: #2a2a2b;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.leftcon button a i{
+    animation: arr 1.5s ease 0s infinite normal forwards;
+}
+@keyframes arr {
+	0% {
+		opacity: 0;
+		transform: translateX(-5px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.leftcon button:hover{
+    transform: translateX(30px);
+}

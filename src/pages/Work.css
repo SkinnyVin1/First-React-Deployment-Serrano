@@ -1,0 +1,122 @@
+.work{
+	height: 135vh;
+	
+}
+.work h1{
+    text-align: center;
+    font-size: 8rem;
+    font-weight: 100;
+
+    padding-top: 50px;
+	animation: tttl 1s ease 0s 1 normal forwards;
+
+}@keyframes tttl {
+	0% {
+		opacity: 0;
+		transform: translateY(-30px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+}
+}
+.work p{
+	text-align: center;
+    font-size: 1.1rem;
+    font-weight: 200;
+	animation: deses 1s ease 0s 1 normal forwards;
+}@keyframes deses {
+	0% {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+
+@keyframes ttl {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.projCard img {
+	display: block;
+		max-width: 100%;
+		height: auto;
+		transition: all .3s ease;
+}
+.projCard {
+	margin: 10px;
+	position: relative;
+	overflow: hidden;
+	height: 400px;
+	width: 600px;
+	animation: ttl 2s ease 0s normal forwards;
+}
+.projCard::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	background-color: #b6d6eaf6;
+	transition: all .3s ease;
+	z-index: 1;
+}
+.projCard .reav {
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #2a2a2b;
+	z-index: 1;
+	opacity: 0;
+	transform: translateY(10px);
+	transition: all .3s ease;
+}
+.projCard .reav h2{
+	font-size: 2rem;
+	font-weight: 300;
+
+}
+.projCard .reav .cardIcons a {
+		font-size: 2rem;
+		padding: 20px;
+		color: #2a2a2b;
+}
+.projCard:hover .reav {
+	bottom: 0;
+	opacity: 1;
+	transform: translateY(0);
+}
+.projCard:hover::before {
+	opacity: 1;
+}
+.projCard:hover  img {
+	transform: scale(1.1);
+}
+
+.wrapper{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}

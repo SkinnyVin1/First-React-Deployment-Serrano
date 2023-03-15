@@ -1,0 +1,64 @@
+.skills{
+    height: 135vh;
+}
+
+.skills h1{
+    text-align: center;
+    font-size: 7rem;
+    font-weight: 100;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    animation: tttl 1s ease 0s 1 normal forwards;
+
+}
+
+.skillsWrapper{
+    display: flex;
+    justify-content: center;
+
+
+    width: 100%;
+}
+
+.section{
+    width: 30%;
+    padding: 0 30px 30px 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    /* display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%; */
+}
+.section h1{
+    padding: 0;
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+.icongrid{
+
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    justify-content: center;
+    row-gap: 70px;
+}
+
+.back{
+
+    border-style: none solid none solid ;
+    border-width: 1px;
+}
+
+
+
+/* .section:nth-child(2),
+.section:nth-child(3) {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  justify-self: center;
+  align-self: center;
+} */
