@@ -16,9 +16,11 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <NavigationBar></NavigationBar>
-        {/* <hr /> */}
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route
+            path="/First-React-Deployment-Serrano"
+            element={<Home />}
+          ></Route>
           <Route path="/About" element={<About />}></Route>
           <Route path="/Skills" element={<Skills />}></Route>
           <Route path="/Work" element={<Work />}></Route>
@@ -27,8 +29,6 @@ function App() {
           <Route path="/Hooks" element={<UseReferenceHook />}></Route>
           <Route path="/HookReducer" element={<UseReducer />}></Route>
         </Routes>
-        {/* <hr /> */}
-        {/* <Footer></Footer> */}
       </div>
     </BrowserRouter>
   );

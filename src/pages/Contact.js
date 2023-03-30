@@ -3,20 +3,20 @@ import { useState, useEffect } from "react";
 import "./Contact.css";
 
 const Contact = () => {
-  const [data, setData] = useState({});
-  const getData = (FormData) => {
-    setData(FormData);
-  };
-  useEffect(() => {
-    alert(`Submited`);
-  });
+  // const [data, setData] = useState({});
+  // const getData = (FormData) => {
+  //   setData(FormData);
+  // };
+  // useEffect(() => {
+  //   alert(`Submited`);
+  // });
   return (
     <div className="contact">
       <h1 className="contacttitle">get in touch</h1>
-      <FormContact callback={getData}></FormContact>
+      {/* <FormContact callback={getData}></FormContact>
       <h1>
         Thank you, {data.lastNameInfo}, {data.firstNameInfo}
-      </h1>
+      </h1> */}
     </div>
   );
 };

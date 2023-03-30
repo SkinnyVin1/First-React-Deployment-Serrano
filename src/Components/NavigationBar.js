@@ -11,11 +11,11 @@ const NavigationBar = () => {
         <li>
           <Link to="/Skills">Skills</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/Hooks">Hooks</Link>
-        </li>
+        </li> */}
         <li>
-          <Link to="/">
+          <Link to="/First-React-Deployment-Serrano">
             <h1>Vangogh</h1>
           </Link>
         </li>
@@ -25,9 +25,9 @@ const NavigationBar = () => {
         <li>
           <Link to="/Contact">Contact</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/HookReducer">Hook Reducer</Link>
-        </li>
+        </li> */}
         {/* <li>
           <Link to="/Cart">Cart</Link>
         </li> */}
