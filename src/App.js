@@ -25,9 +25,9 @@ function App() {
           <Route path="/Skills" element={<Skills />}></Route>
           <Route path="/Work" element={<Work />}></Route>
           <Route path="/Contact" element={<Contact />}></Route>
-          <Route path="/Cart" element={<CartMultiple />}></Route>
-          <Route path="/Hooks" element={<UseReferenceHook />}></Route>
-          <Route path="/HookReducer" element={<UseReducer />}></Route>
+          {/* <Route path="/Cart" element={<CartMultiple />}></Route> */}
+          {/* <Route path="/Hooks" element={<UseReferenceHook />}></Route> */}
+          {/* <Route path="/HookReducer" element={<UseReducer />}></Route> */}
         </Routes>
       </div>
     </BrowserRouter>
